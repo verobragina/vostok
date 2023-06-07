@@ -1,0 +1,171 @@
+.vi-placeholder {
+  position: relative;
+  min-height: 100vh;
+
+  .vi-container {
+    height: 100%;
+  }
+}
+
+.vi-placeholder__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  img {
+    @include cover-img;
+    object-position: bottom;
+  }
+}
+
+.vi-placeholder__main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  z-index: 1;
+  padding: 60px 0;
+
+  @include smDesktop {
+    padding: 40px 0;
+  }
+
+  @include phone {
+    padding: 22px 0;
+  }
+}
+
+.vi-placeholder__logo {
+  display: block;
+  width: 405px;
+  height: 105px;
+  margin-bottom: 24px;
+
+  svg {
+    display: block;
+    width: 405px;
+    height: 105px;
+  }
+
+  @include smDesktop {
+    width: 270px;
+    height: 70px;
+
+    svg {
+      width: 270px;
+      height: 70px;
+    }
+  }
+
+  @include phone {
+    width: 197px;
+    height: 51px;
+
+    svg {
+      width: 197px;
+      height: 51px;
+    }
+  }
+}
+
+.vi-placeholder__inner {
+  margin-top: auto;
+}
+
+.vi-placeholder__title {
+  font-weight: 600;
+  font-size: 82px;
+  line-height: 102%;
+  max-width: 870px;
+  margin-bottom: 145px;
+
+  @include smDesktop {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 102%;
+    max-width: 669px;
+    margin-bottom: 122px;
+  }
+
+  @include tablet {
+    margin-bottom: 114px;
+  }
+
+  @include phone {
+    font-weight: 600;
+    font-size: 31px;
+    line-height: 102%;
+    max-width: 100%;
+    margin-bottom: 70px;
+  }
+}
+
+.vi-placeholder__footer {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 100%;
+
+  @include smDesktop {
+    font-size: 18px;
+  }
+
+  @include tablet {
+    display: grid;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    grid-template-columns: max-content 1fr;
+  }
+
+  @include phone {
+    grid-template-columns: 1fr;
+    font-size: 16px;
+  }
+}
+
+.vi-placeholder__footer-link {
+  display: inline-block;
+  transition: $base-transition;
+
+  &:nth-child(2) {
+    margin-left: 106px;
+
+    @include smDesktop {
+      margin-left: 51px;
+    }
+
+    @include tablet {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      margin-left: 0;
+    }
+  }
+
+  &:last-child {
+    margin-left: auto;
+
+    @include tablet {
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+
+    @include phone {
+      grid-column: 1/2;
+      grid-row: unset;
+      margin-left: 0;
+    }
+  }
+
+  @include phone {
+    grid-column: 1/2;
+    grid-row: unset;
+    margin-left: 0;
+  }
+
+  @include hover {
+    opacity: .6;
+  }
+}

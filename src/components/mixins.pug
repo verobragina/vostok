@@ -1,0 +1,5 @@
+mixin icon(id,name,mod)
+  - mod = mod || '';
+  - name = name || '';
+  svg(class= name + ' ' + mod)
+    use(xlink:href="#" + id)

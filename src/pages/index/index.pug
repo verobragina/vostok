@@ -1,0 +1,22 @@
+extends ../../layout/main
+
+block variables
+  -
+    const title = 'Восток Инвестиции';
+
+block content
+  main.vi-placeholder
+    .vi-placeholder__image
+      picture
+        source(srcset="/assets/img/placeholder.png" media="(max-width: 576px)")
+        img(src="/assets/img/placeholder.png" alt="" aria-hidden="true")
+    .vi-container
+      .vi-placeholder__main
+        a(href="/").vi-placeholder__logo
+          +icon('logo', 'logo')
+        .vi-placeholder__inner
+          h1.vi-placeholder__title Лидер в области прямых инвестиций в&nbsp;России
+          .vi-placeholder__footer
+            a(href="https://yandex.ru/maps/-/CCU1Q0QL~C" target="_blank").vi-placeholder__footer-link Калининград, о. Октябрьский
+            a(href="https://yandex.ru/maps/-/CCU1Q0QL~C" target="_blank").vi-placeholder__footer-link Калининград, о. Октябрьский
+            a(href="mailto:info@v.investments").vi-placeholder__footer-link email: info@v.investments

@@ -1,0 +1,30 @@
+/* Vars:
+  ========================================================================== */
+
+// Font
+$font-family-main               : 'Graphik LCG', Helvetica, Arial, sans-serif;
+
+// Size
+$mainFontSize            : 16px;
+$mainFontWeight          : 500;
+$mainLineHeight          : 1.2;
+
+$desktop                 : '(max-width: 1439px)';
+$smDesktop               : '(max-width: 1280px)';
+$tablet                  : '(max-width: 1024px)';
+$smTablet                : '(max-width: 768px)';
+$phone                   : '(max-width: 576px)';
+$smPhone                 : '(max-width: 320px)';
+
+// Colors
+$blue                    : #9DCBF0;
+$dark-black              : #142C39;
+$white                   : #FFFFFF;
+$black                   : #000000;
+
+
+$color-text-primary      : $blue;
+$main-background         : $dark-black;
+
+// Transition
+$base-transition         : all 0.3s ease;
